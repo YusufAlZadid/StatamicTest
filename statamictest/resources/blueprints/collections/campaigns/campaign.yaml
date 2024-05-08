@@ -1,0 +1,115 @@
+title: Campaign
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+          -
+            import: hero
+          -
+            handle: donation_form
+            field:
+              fields:
+                -
+                  handle: salesforce_url
+                  field:
+                    input_type: url
+                    antlers: false
+                    type: text
+                    display: 'SalesForce URL'
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: form_headline
+                  field:
+                    input_type: text
+                    default: 'I want to donate...'
+                    antlers: false
+                    type: text
+                    display: 'Form Headline'
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  import: donation_form_fields
+              fullscreen: true
+              type: group
+              display: 'Donation Form'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: featured_services
+            field:
+              fields:
+                -
+                  import: mutiple_features_section
+              fullscreen: true
+              type: group
+              display: 'Featured Services'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  seo:
+    display: SEO
+    sections:
+      -
+        display: Basic
+        instructions: 'Basic SEO settings.'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_basic'
+      -
+        display: Advanced
+        instructions: 'Advanced SEO settings.'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_open_graph'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        display: Meta
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              max_items: 1
+              mode: default
+              create: true
+              type: entries
+              display: Parent
+              listable: false
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

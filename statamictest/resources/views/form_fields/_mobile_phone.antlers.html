@@ -1,0 +1,12 @@
+{{ mobile_phone_group }}
+
+    {{ if mobile_phone_show }}
+        <div class="row mb-3">
+            <div class="col">
+                <input class="form-control" type="text" id="mobile_phone" name="MobilePhone" placeholder="{{ ( mobile_phone != "" ) ? {mobile_phone} : "+61 XXX XXX XXX" }}" {{ mobile_phone_required ? "required" : "" }}>
+                <span class="text-danger input-error d-none">This field is required</span>
+            </div>
+        </div>
+    {{ /if }}
+    
+{{ /mobile_phone_group }}

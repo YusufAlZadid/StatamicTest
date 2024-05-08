@@ -1,0 +1,183 @@
+action: publish
+date: 1709562810
+user: c4b9ce82-9489-41b7-a710-a9a1178bcb37
+attributes:
+  id: ccf3f331-f833-4992-9df5-0ec5ed90b07f
+  slug: donation
+  published: true
+  date: null
+  data:
+    blueprint: campaign
+    title: Donation
+    author: c4b9ce82-9489-41b7-a710-a9a1178bcb37
+    hero:
+      hero_background: asylum-banner.jpg
+      hero_heading: 'Support people seeking asylum'
+      hero_sub_heading: "Donate to a friend's fundraiser or make a contribution directly to us"
+    layout: layout
+    template: '@blueprint'
+    featured_services:
+      headline: 'OUR SERVICES'
+      byline: 'Where does my money go?'
+      featured_grid:
+        -
+          id: lrvo4493
+          featured_image: services/asylum-seeker-icons-22-doctors-nurses-svg-bd63a2.svg
+          featured_title: 'PRIMARY HEALTH CLINIC'
+        -
+          id: lrvoji0f
+          featured_image: services/asylum-seeker-icons-04-family-svg-22593c.svg
+          featured_title: 'ACCESS TO CHILDCARE'
+        -
+          id: lrw4n32y
+          featured_image: services/asylum-seeker-icons-11-food-svg-096749.svg
+          featured_title: 'FOOD & GROCERIES SUPPORT'
+        -
+          id: lrw4ncaa
+          featured_image: services/asylum-seeker-icons-21-food-svg-00c400.svg
+          featured_title: 'COMMUNITY LUNCHES'
+        -
+          id: lrw4ykkp
+          featured_image: services/asylum-seeker-icons-12-meeting-svg-87089b.svg
+          featured_title: 'INDIVIDUALISED SUPPORT'
+        -
+          id: lrw4z2gp
+          featured_image: services/asylum-seeker-icons-15-money-svg-5a8644.svg
+          featured_title: 'EMERGENCY FINANCIAL RELIEF'
+        -
+          id: lrw4zcux
+          featured_image: services/asylum-seeker-icons-23-sport-art-svg-76c3d5.svg
+          featured_title: 'RECREATIONAL ACTIVITIES'
+        -
+          id: lrw4zkzl
+          featured_image: services/asylum-seeker-icons-10-handshake-svg-80ec5b.svg
+          featured_title: 'EMPLOYMENT ASSISTANCE'
+        -
+          id: lrw5hqs0
+          featured_image: services/asylum-seeker-icons-19-school-bag-svg-6404e7.svg
+          featured_title: 'FAMILY & SCHOOL SUPPORT'
+        -
+          id: lrw5hz1b
+          featured_image: services/asylum-seeker-icons-20-clip-board-svg-6041cd.svg
+          featured_title: 'TRAINING & JOB READINESS'
+        -
+          id: lrw5id2g
+          featured_image: services/asylum-seeker-icons-09-tablet-svg-d771d9.svg
+          featured_title: 'DIGITAL CONNECTIVITY'
+        -
+          id: lrw5iiko
+          featured_image: services/asylum-seeker-icons-17-home-svg-464a5d.svg
+          featured_title: 'SHORT & MEDIUM TERM HOUSING'
+        -
+          id: lrw5iym8
+          featured_image: services/asylum-seeker-icons-08-medical-svg-39beef.svg
+          featured_title: MEDICATIONS
+        -
+          id: lrw5j6fk
+          featured_image: services/asylum-seeker-icons-16-pen-svg-28df00.svg
+          featured_title: 'ENGLISH CLASSES'
+        -
+          id: lrw5jhcn
+          featured_image: services/asylum-seeker-icons-26-tap-svg-00d411.svg
+          featured_title: 'TRANSPORT COSTS'
+        -
+          id: lrw5jmag
+          featured_image: services/asylum-seeker-icons-24-needle-svg-b11fa9.svg
+          featured_title: IMMUNISATION
+    donation_form:
+      salesforce_url: 'https://vishonboard-dev-ed.develop.my.salesforce-sites.com/AAkPay__CheckoutM?payMSetting=a0Z5i000004FWPFEA4&payMType=a0b5i0000073wCmAAI'
+      form_headline: 'I want to donate...'
+      donation_amounts:
+        -
+          id: lrxo9q4o
+          amount: 20
+          description: 'can provide a backpack & school supplies.'
+          thumbnail: note-thanun-6-m-29-ang-o-yo-unsplash-jpg-0c9b52.jpg
+        -
+          id: lrxoavfk
+          thumbnail: jae-park-9-sa-flgw-fd-a-unsplash-jpg-44ce04.jpg
+          amount: 30
+          description: 'can recharge mobile phone credit for 30 days'
+        -
+          id: lrxob9ts
+          thumbnail: maria-lin-kim-8-ra-u-ed-8-z-d-u-unsplash-jpg-a62fb8.jpg
+          amount: 50
+          description: 'can put food on the table'
+      default_amount: 30
+      section_field: null
+      required_fields_grid:
+        -
+          id: ls4vpze5
+          first_name_group:
+            first_name: 'First Name *'
+            first_name_show: true
+            first_name_required: true
+          last_name_group:
+            last_name: 'Last Name *'
+            last_name_show: true
+            last_name_required: true
+          email_address_group:
+            email_address: 'Email *'
+            email_address_show: true
+            email_address_required: true
+          address_group:
+            address: null
+            address_show: true
+            address_required: true
+          salutation_group:
+            salutation:
+              Mr.: Mr.
+              Ms.: Ms.
+              Mrs.: Mrs.
+              Dr.: Dr.
+              Engr.: Engr.
+            salutation_show: true
+            salutation_required: false
+          phone_group:
+            phone: null
+            phone_show: false
+            phone_required: null
+          mobile_phone_group:
+            mobile_phone: null
+            mobile_phone_show: true
+            mobile_phone_required: false
+    page_builder:
+      -
+        id: ls7nk4vi
+        article:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Etiam feugiat lorem non metus. Nulla facilisi. Praesent congue erat at massa. Etiam ut purus mattis mauris sodales aliquam. Vestibulum suscipit nulla quis orci.'
+          -
+            type: set
+            attrs:
+              id: ls7nv3ra
+              values:
+                type: image
+                image: maria-lin-kim-8-ra-u-ed-8-z-d-u-unsplash-jpg-a62fb8.jpg
+                size: md
+        type: article
+        enabled: true
+      -
+        id: ltd1j8y4
+        featured_grid:
+          -
+            id: ltd1jdhg
+            featured_image: services/national-cancer-institute-60UVwyDyXSM-unsplash.jpg
+            featured_title: 'What?????'
+        type: featured_section
+        enabled: true
+    content: |-
+      Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Donec mollis hendrerit risus. Etiam ut purus mattis mauris sodales aliquam. Praesent ac massa at ligula laoreet iaculis. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
+
+      Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. In ut quam vitae odio lacinia tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam sagittis. Curabitur suscipit suscipit tellus.
+
+      Sed libero. Fusce fermentum. Maecenas malesuada. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Suspendisse non nisl sit amet velit hendrerit rutrum.
+    seo_title: null
+    seo_description: null
+    og_title: null
+    og_description: null
+    og_image: null

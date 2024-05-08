@@ -1,0 +1,45 @@
+action: publish
+date: 1707485954
+user: c4b9ce82-9489-41b7-a710-a9a1178bcb37
+message: 'Test 2 upload test 5'
+attributes:
+  id: 48def116-87ca-4d9e-92a7-735de920d059
+  slug: test-2
+  published: true
+  date: null
+  data:
+    blueprint: page
+    title: 'Test 2'
+    page_builder:
+      -
+        id: ls1y2yo0
+        article:
+          -
+            type: heading
+            attrs:
+              level: 1
+            content:
+              -
+                type: text
+                text: 'Test 2'
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Test 2 upload test 5'
+        type: article
+        enabled: true
+    seo_noindex: false
+    seo_nofollow: false
+    seo_canonical_type: entry
+    sitemap_change_frequency: weekly
+    sitemap_priority: 0.5
+    seo_title: null
+    seo_description: null
+    seo_canonical_current: null
+    seo_canonical_external: null
+    og_title: null
+    og_description: null
+    og_image: null
+    schema_jsonld: null

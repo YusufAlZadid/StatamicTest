@@ -1,0 +1,11 @@
+title: Campaigns
+template: default
+layout: layout
+route: '{parent_uri}/{slug}'
+sort_dir: asc
+revisions: true
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: false

@@ -1,0 +1,66 @@
+{{ hero }}
+
+    <section class="hero bg-primary" style='background-image: url("{{ hero_background | url }}");'>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <h2 class="display-5 fw-bold mb-5">{{ hero_heading }}</h2>
+                        <h4 class="hero__sub_heading h4">{{ hero_sub_heading }}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{{ /hero }}
+
+{{ partial:layout/donation-form }}
+
+{{ featured_services }}
+
+    <section class="our-services featured">
+        <div class="container">
+
+            <div class="row">
+                <div class="column">
+                    <h6 class="fw-bold small">
+                        {{ headline }}
+                    </h6>
+                    <h2 class="display-6 fw-bold text-primary" style="letter-spacing: normal;">
+                        {{ byline }}
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-4 py-xl-5">
+            <div class="row gx-5 gy-4 row-cols-lg-4 row-cols-md-2 row-cols-1">
+
+                {{ featured_grid }}
+                    
+                        <div class="col text-center featured__column">
+
+                            {{ featured_image }}
+                                <img src="{{ url }}" alt="{{ alt }}" class="featured__img">
+                            {{ /featured_image }}
+
+                            <div class="py-4">
+                                <h6 class="heading">
+                                    {{ featured_title }}
+                                </h6>
+                            </div>
+                        </div>
+
+                {{ /featured_grid }}
+
+            </div>
+        </div>
+
+    </section>
+
+{{ /featured_services }}
+
+{{ page_builder scope="block" }}
+    {{ partial src="page_builder/{type}" }}
+{{ /page_builder }}

@@ -1,0 +1,449 @@
+title: 'Donation Form Fields'
+fields:
+  -
+    handle: donation_amounts
+    field:
+      fields:
+        -
+          handle: thumbnail
+          field:
+            max_files: 1
+            mode: grid
+            container: images
+            restrict: false
+            allow_uploads: true
+            show_filename: true
+            show_set_alt: true
+            type: assets
+            display: Thumbnail
+            icon: assets
+            width: 75
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            replicator_preview: true
+            hide_display: false
+        -
+          handle: amount
+          field:
+            type: integer
+            display: Amount
+            icon: integer
+            width: 25
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            replicator_preview: true
+            hide_display: false
+        -
+          handle: description
+          field:
+            input_type: text
+            antlers: false
+            type: text
+            display: Description
+            icon: text
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            replicator_preview: true
+            hide_display: false
+      mode: stacked
+      reorderable: true
+      fullscreen: true
+      type: grid
+      display: 'Donation Amounts'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      add_row: 'Add Amount'
+  -
+    handle: default_amount
+    field:
+      type: integer
+      display: 'Default Amount'
+      instructions: 'Select the exact amount from the list of amounts above'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: section_field
+    field:
+      type: section
+      display: 'Section Field'
+      instructions: 'FORM FIELDS'
+      listable: hidden
+      instructions_position: below
+      visibility: visible
+      replicator_preview: true
+      hide_display: true
+  -
+    handle: required_fields_grid
+    field:
+      fields:
+        -
+          handle: salutation_group
+          field:
+            fields:
+              -
+                handle: salutation
+                field:
+                  mode: dynamic
+                  type: array
+                  display: Salutation
+                  width: 50
+                  listable: hidden
+                  instructions_position: above
+                  visibility: visible
+                  replicator_preview: true
+                  hide_display: false
+              -
+                handle: salutation_show
+                field:
+                  default: false
+                  type: toggle
+                  display: 'Salutation Show'
+                  width: 25
+                  listable: hidden
+                  instructions_position: above
+                  visibility: visible
+                  replicator_preview: true
+                  hide_display: true
+                  instructions: 'Do you want to show this field?'
+                  inline_label: 'No / Yes'
+              -
+                handle: salutation_required
+                field:
+                  default: false
+                  type: toggle
+                  display: 'Salutation Required'
+                  width: 25
+                  listable: hidden
+                  instructions_position: above
+                  visibility: visible
+                  replicator_preview: true
+                  hide_display: true
+                  instructions: 'Is this field required on submission?'
+                  inline_label: 'No / Yes'
+                  always_save: false
+                  if:
+                    salutation_show: 'equals true'
+            fullscreen: true
+            type: group
+            display: 'Salutation Group'
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            replicator_preview: true
+            hide_display: true
+            instructions: Salutation
+        -
+          handle: first_name_group
+          field:
+            fields:
+              -
+                handle: first_name
+                field:
+                  input_type: text
+                  placeholder: 'First Name'
+                  antlers: false
+                  type: text
+                  display: 'First Name'
+                  width: 50
+                  listable: hidden
+                  instructions_position: above
+                  visibility: visible
+                  replicator_preview: true
+                  hide_display: true
+                  prepend: Placeholder
+              -
+                handle: first_name_show
+                field:
+                  default: false
+                  type: toggle
+                  display: 'First Name Show'
+                  width: 25
+                  listable: hidden
+                  instructions_position: above
+                  visibility: visible
+                  replicator_preview: true
+                  hide_display: true
+                  instructions: 'Do you want to show this field?'
+                  inline_label: 'No / Yes'
+              -
+                handle: first_name_required
+                field:
+                  default: false
+                  type: toggle
+                  display: 'First Name Required'
+                  width: 25
+                  listable: hidden
+                  instructions_position: above
+                  visibility: visible
+                  replicator_preview: true
+                  hide_display: true
+                  instructions: 'Is this field required on submission?'
+                  inline_label: 'No / Yes'
+                  if:
+                    first_name_show: 'equals true'
+            fullscreen: true
+            type: group
+            display: 'First Name Group'
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            replicator_preview: true
+            hide_display: true
+            instructions: 'First Name'
+        -
+          handle: last_name_group
+          field:
+            fields:
+              -
+                handle: last_name
+                field:
+                  input_type: text
+                  placeholder: 'Last Name'
+                  antlers: false
+                  type: text
+                  display: 'Last Name'
+                  width: 50
+                  listable: hidden
+                  instructions_position: above
+                  visibility: visible
+                  replicator_preview: true
+                  hide_display: true
+                  prepend: Placeholder
+              -
+                handle: last_name_show
+                field:
+                  default: false
+                  type: toggle
+                  display: 'Last Name Show'
+                  width: 25
+                  listable: hidden
+                  instructions_position: above
+                  visibility: visible
+                  replicator_preview: true
+                  hide_display: true
+                  instructions: 'Do you want to show this field?'
+                  inline_label: 'No / Yes'
+              -
+                handle: last_name_required
+                field:
+                  default: false
+                  type: toggle
+                  display: 'Last Name Required'
+                  width: 25
+                  listable: hidden
+                  instructions_position: above
+                  visibility: visible
+                  replicator_preview: true
+                  hide_display: true
+                  instructions: 'Is this field required on submission?'
+                  inline_label: 'No / Yes'
+                  if:
+                    last_name_show: 'equals true'
+            fullscreen: true
+            type: group
+            display: 'Last Name Group'
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            replicator_preview: true
+            hide_display: true
+            instructions: 'Last Name'
+        -
+          handle: email_address_group
+          field:
+            fields:
+              -
+                handle: email_address
+                field:
+                  input_type: text
+                  placeholder: 'Email Address'
+                  antlers: false
+                  type: text
+                  display: 'Email Address'
+                  width: 50
+                  listable: hidden
+                  instructions_position: above
+                  visibility: visible
+                  replicator_preview: true
+                  hide_display: true
+                  prepend: Placeholder
+              -
+                handle: email_address_show
+                field:
+                  default: false
+                  type: toggle
+                  display: 'Email Address Show'
+                  width: 25
+                  listable: hidden
+                  instructions_position: above
+                  visibility: visible
+                  replicator_preview: true
+                  hide_display: true
+                  instructions: 'Do you want to show this field?'
+                  inline_label: 'No / Yes'
+              -
+                handle: email_address_required
+                field:
+                  default: false
+                  type: toggle
+                  display: 'Email Address Required'
+                  width: 25
+                  listable: hidden
+                  instructions_position: above
+                  visibility: visible
+                  replicator_preview: true
+                  hide_display: true
+                  instructions: 'Is this field required on submission?'
+                  inline_label: 'No / Yes'
+                  if:
+                    email_address_show: 'equals true'
+            fullscreen: true
+            type: group
+            display: 'Email Address Group'
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            replicator_preview: true
+            hide_display: true
+            instructions: 'Email Address'
+        -
+          handle: address_group
+          field:
+            fields:
+              -
+                handle: address
+                field:
+                  input_type: text
+                  placeholder: Address
+                  antlers: false
+                  type: text
+                  display: address
+                  width: 50
+                  listable: hidden
+                  instructions_position: above
+                  visibility: visible
+                  replicator_preview: true
+                  hide_display: true
+                  prepend: Placeholder
+                  instructions: Address
+              -
+                handle: address_show
+                field:
+                  default: false
+                  type: toggle
+                  display: 'Address Show'
+                  width: 25
+                  listable: hidden
+                  instructions_position: above
+                  visibility: visible
+                  replicator_preview: true
+                  hide_display: true
+                  instructions: 'Do you want to show this field?'
+                  inline_label: 'No / Yes'
+              -
+                handle: address_required
+                field:
+                  default: false
+                  type: toggle
+                  display: 'Address Required'
+                  width: 25
+                  listable: hidden
+                  instructions_position: above
+                  visibility: visible
+                  replicator_preview: true
+                  hide_display: true
+                  instructions: 'Is this field required on submission?'
+                  inline_label: 'No / Yes'
+                  always_save: false
+                  if:
+                    address_show: 'equals true'
+            fullscreen: true
+            type: group
+            display: 'Address Group'
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            replicator_preview: true
+            hide_display: true
+        -
+          handle: mobile_phone_group
+          field:
+            fields:
+              -
+                handle: mobile_phone
+                field:
+                  input_type: tel
+                  antlers: false
+                  type: text
+                  display: 'Mobile Phone'
+                  width: 50
+                  listable: hidden
+                  instructions_position: above
+                  visibility: visible
+                  replicator_preview: true
+                  hide_display: true
+                  placeholder: '+61 XXX XXX XXX'
+                  prepend: Placeholder
+              -
+                handle: mobile_phone_show
+                field:
+                  default: false
+                  type: toggle
+                  display: 'Mobile Phone Show'
+                  width: 25
+                  listable: hidden
+                  instructions_position: above
+                  visibility: visible
+                  replicator_preview: true
+                  hide_display: true
+                  instructions: 'Do you want to show this field?'
+                  inline_label: 'No / Yes'
+              -
+                handle: mobile_phone_required
+                field:
+                  default: false
+                  type: toggle
+                  display: 'Mobile Phone Required'
+                  width: 25
+                  listable: hidden
+                  instructions_position: above
+                  visibility: visible
+                  replicator_preview: true
+                  hide_display: true
+                  instructions: 'Is this field required on submission?'
+                  inline_label: 'No / Yes'
+                  always_save: false
+                  if:
+                    mobile_phone_show: 'equals true'
+            fullscreen: true
+            type: group
+            display: 'Mobile Phone Group'
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            replicator_preview: true
+            hide_display: true
+            instructions: 'Mobile Phone'
+      mode: stacked
+      max_rows: 1
+      add_row: 'Select Input Fields'
+      reorderable: true
+      fullscreen: true
+      type: grid
+      instructions: 'SELECT THE FORM FIELDS TO BE INCLUDED IN YOUR FORM'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      duplicate: false
+      hide_display: true
+      display: 'Required Fields Grid'

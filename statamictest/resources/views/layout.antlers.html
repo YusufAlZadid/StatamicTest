@@ -1,0 +1,58 @@
+{{#
+    @name Layout
+    @desc The default layout file.
+#}}
+
+<!-- /layout.antlers.html -->
+<!doctype html>
+<html lang="{{ site:short_locale }}" class="scroll-pt-4 antialiased scroll-smooth">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet"> -->
+
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
+        <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <!-- <link rel="stylesheet" href="assets/css/styles.compiled.css"> -->
+        
+        
+        {{ vite src="resources/css/site.css|resources/js/site.js" }}
+
+        {{ partial:statamic-peak-seo::snippets/seo }}
+        {{ partial:statamic-peak-browser-appearance::snippets/browser_appearance }}
+        {{ partial:statamic-peak-tools::snippets/live_preview }}
+    </head>
+    <body class="flex flex-col">
+        {{ stack:seo_body }}
+        {{ partial:statamic-peak-tools::snippets/noscript }}
+
+        {{ partial:layout/asylum_header }}
+        {{ template_content }}
+        {{ partial:layout/footer }}
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/aphanum.js"></script>
+    <script src="assets/js/jquery.ui.core.js"></script>
+    <script src="assets/js/jquery.ui.widget.js"></script>
+    <script src="assets/js/jquery.ui.position.js"></script>
+    <script src="assets/js/jquery.ui.autocomplete.js"></script>
+    <script src="assets/js/jquery.ui.menu.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    </body>
+</html>
+<!-- End: /layout.antlers.html -->

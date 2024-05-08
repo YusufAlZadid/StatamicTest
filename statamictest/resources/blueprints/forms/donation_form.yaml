@@ -1,0 +1,26 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: form_fields
+            field:
+              options:
+                'First Name': 'First Name'
+                'Last Name': 'Last Name'
+                'Email': 'Email'
+                'Address': 'Address'
+                'Salutation': 'Salutation'
+                'Mobile Phone': 'Mobile Phone'
+              inline: false
+              type: checkboxes
+              display: 'Form Fields'
+              icon: checkboxes
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+

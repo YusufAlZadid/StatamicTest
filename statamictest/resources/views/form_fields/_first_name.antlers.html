@@ -1,0 +1,12 @@
+{{ first_name_group }}
+
+    {{ if first_name_show }}
+        <div class="row mb-3">
+            <div class="col">
+                <input class="form-control" type="text" id="first_name" name="FirstName" placeholder="{{ ( first_name != "" ) ? {first_name} : "First Name" }}" {{ first_name_required ? "required" : "" }}>
+                <span class="text-danger input-error d-none">This field is required</span>
+            </div>
+        </div>
+    {{ /if }}
+    
+{{ /first_name_group }}
